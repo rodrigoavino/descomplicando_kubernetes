@@ -1,7 +1,9 @@
 # 🚀 Kind: Simulação de Cluster Kubernetes
 
-O **Kind** é uma ferramenta para execução de contêineres Docker que simulam o funcionamento de um cluster Kubernetes.  
+O **Kind** é uma ferramenta para execução de contêineres Docker que simulam o funcionamento de um cluster Kubernetes. 
+
 É utilizado para **fins didáticos, de desenvolvimento e testes**.  
+
 ⚠️ **O Kind não deve ser utilizado para produção.**
 
 ## 📌 Instalação do Kind
@@ -41,4 +43,33 @@ You can now use your cluster with:
 
 ```
 kubectl cluster-info --context kind-kind
+
+```
+Visualizar cluster
+
+
+```
+kind get cluster
+```
+
+Listar nodes
+```
+kubectl get nodes
+```
+
+# Execute o comando a seguir para selecionar e remover todos os clusters locais criados no Kind.
+
+```
+kind delete clusters $(kind get clusters)
+```
+
+Examplo arquivo yaml para kind
+
+```
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+  - role: worker
+  - role: worker
 ```
