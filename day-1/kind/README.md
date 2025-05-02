@@ -27,14 +27,14 @@ sudo mv ./kind /usr/local/bin/kind
 ```
 kind create cluster
 ```
- ✓ Creating cluster "kind" ...
- ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
- ✓ Preparing nodes 📦  
- ✓ Writing configuration 📜 
- ✓ Starting control-plane 🕹️ 
- ✓ Installing CNI 🔌 
- ✓ Installing StorageClass 💾 
- ✓  Set kubectl context to "kind-kind"
+ - Creating cluster "kind" ...
+ - Ensuring node image (kindest/node:v1.24.0) 🖼
+ - Preparing nodes 📦  
+ - Writing configuration 📜 
+ - Starting control-plane 🕹️ 
+ - Installing CNI 🔌 
+ - Installing StorageClass 💾 
+ - Set kubectl context to "kind-kind"
 
 
 You can now use your cluster with:
