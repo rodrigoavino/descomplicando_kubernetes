@@ -27,8 +27,7 @@ sudo mv ./kind /usr/local/bin/kind
 ```
 kind create cluster
 ```
-
-Creating cluster "kind" ...
+ ✓ Creating cluster "kind" ...
  ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
  ✓ Preparing nodes 📦  
  ✓ Writing configuration 📜 
