@@ -34,7 +34,9 @@ kind create cluster
  ✓ Starting control-plane 🕹️ 
  ✓ Installing CNI 🔌 
  ✓ Installing StorageClass 💾 
-Set kubectl context to "kind-kind"
+ ✓  Set kubectl context to "kind-kind"
+
+
 You can now use your cluster with:
 
 ```
