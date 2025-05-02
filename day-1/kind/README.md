@@ -9,23 +9,26 @@ O **Kind** é uma ferramenta para execução de contêineres Docker que simulam 
 Execute os seguintes comandos para instalar o **Kind** no Linux:
 
 # Baixar o binário do Kind
-```sh
+```
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
-
+```
 
 # Dar permissão de execução
-```sh
+```
 chmod +x ./kind
+```
 
 # Mover o binário para um diretório acessível globalmente
-```sh
+```
 sudo mv ./kind /usr/local/bin/kind
+```
 
 # Criar cluster
-
+```
 kind create cluster
+```
 
-# Creating cluster "kind" ...
+Creating cluster "kind" ...
  ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
  ✓ Preparing nodes 📦  
  ✓ Writing configuration 📜 
@@ -35,4 +38,6 @@ kind create cluster
 Set kubectl context to "kind-kind"
 You can now use your cluster with:
 
+```
 kubectl cluster-info --context kind-kind
+```
